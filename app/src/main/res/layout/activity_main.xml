@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".views.activities.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/view_rounded"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="4dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:text="@string/app_form"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="16dp"
+            android:textSize="12sp"
+            android:text="@string/app_from"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:id="@+id/idSpnCoinType" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/idLayValue"
+            android:layout_marginTop="16dp"
+            app:passwordToggleEnabled="true"
+            app:errorEnabled="true">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/idEdtValue"
+                android:inputType="numberDecimal"
+                android:hint="@string/app_value"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <include
+            layout="@xml/required_field"
+            android:id="@+id/idTxtValueRequired"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textSize="12sp"
+            android:layout_marginTop="16dp"
+            android:text="@string/app_to"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:id="@+id/idSpnCoinConverted"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:paddingTop="6dp"
+            android:id="@+id/idBtnConvert"
+            android:paddingBottom="6dp"
+            android:text="@string/app_convert"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/view_rounded"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="8dp"
+        android:visibility="gone"
+        android:id="@+id/idLnAboutConversion"
+        android:layout_marginRight="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="4dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:text="@string/app_about_conversion"
+            android:textSize="13sp"/>
+
+        <ProgressBar
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:id="@+id/idPrgConversion"
+            android:layout_gravity="center_horizontal|center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:id="@+id/idTxtResultConversion"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+</LinearLayout>

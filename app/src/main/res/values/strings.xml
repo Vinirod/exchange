@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Exchange</string>
+    <string name="app_required_field">Required field</string>
+    <string name="app_log_in">LOG IN</string>
+    <string name="app_convert">Convert</string>
+    <string name="app_user_or_email">Username or Email</string>
+    <string name="app_passoword">Password</string>
+    <string name="app_value">Value R$</string>
+    <string name="app_form">Form </string>
+    <string name="app_about_conversion">About conversion</string>
+    <string name="app_or_try_here">Or try here</string>
+    <string name="app_from">From:</string>
+    <string name="app_to">To:</string>
+    <string name="app_title_coin_convert">Convert coin</string>
+    <string name="app_ic_history">History</string>
+</resources>
